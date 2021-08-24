@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Form Elements</header>
+      <a href="#The_HTML_Form_Elements" class="nav-link"
+        >The HTML Form Elements</a
+      >
+      <a href="#The_Input_Element" class="nav-link">The Input Element</a>
+      <a href="#The_Button_Element" class="nav-link">The Button Element</a>
+      <a href="#The_Textarea_Element" class="nav-link">The Textarea Element</a>
+      <a href="#The_Fieldset_and_Legend_Elements" class="nav-link"
+        >The Fieldset and Legend Elements</a
+      >
+      <a href="#The_Datalist_Element" class="nav-link">The Datalist Element</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="The_HTML_Form_Elements">
+        <header>The HTML Form Elements</header>
+        <ol>
+          <li>&lt;input&gt;</li>
+          <li>&lt;button&gt;</li>
+          <li>&lt;textarea&gt;</li>
+          <li>&lt;fieldset&gt; and &lt;legend&gt;</li>
+          <li>&lt;datalist&gt;</li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="The_Input_Element">
+        <header>The Input Element</header>
+        <p>
+          One of the most used form element is the input element. The input
+          element can be displayed in several ways, depending on the type
+          attribute. All the different values of the type attribute are covered
+          in the next chapter: HTML Input Types.
+        </p>
+        <p>Example:</p>
+        <code>&lt;label for="fname"&gt;First name:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
+      </section>
+
+      <section class="main-section" id="The_Button_Element">
+        <header>The Button Element</header>
+        <p>The button element defines a clickable button:</p>
+        <p>Example:</p>
+        <code>&lt;button type="button">Click Me!&lt;/button&gt;</code>
+      </section>
+
+      <section class="main-section" id="The_Textarea_Element">
+        <header>The Textarea Element</header>
+        <p>
+          The textarea element defines a multi-line input field (a text area):
+          The rows attribute specifies the visible number of lines in a text
+          area. The cols attribute specifies the visible width of a text area.
+        </p>
+        <p>Example:</p>
+        <code>&lt;textarea name="message" rows="10" cols="30"&gt;</code>
+        <code>The cat was playing in the garden.</code>
+        <code>&lt;/textarea&gt;</code>
+      </section>
+
+      <section class="main-section" id="The_Fieldset_and_Legend_Elements">
+        <header>The Fieldset and Legend Elements</header>
+        <p>
+          The fieldset element is used to group related data in a form. The
+          legend element defines a caption for the fieldset element.
+        </p>
+        <p>Example:</p>
+        <code>&lt;form action="/action_page.php"&gt;</code>
+        <code>&lt;fieldset&gt;</code>
+        <code>&lt;legend&gt;Personalia:&lt;/legend&gt;</code>
+        <code
+          >&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;</code
+        >
+        <code
+          >&lt;input type="text" id="fname" name="fname"
+          value="John"&gt;&lt;br&gt;</code
+        >
+        <code>&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;</code>
+        <code
+          >&lt;input type="text" id="lname" name="lname"
+          value="Doe"&gt;&lt;br&gt;&lt;br&gt;</code
+        >
+        <code>&lt;input type="submit" value="Submit"&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </section>
+
+      <section class="main-section" id="The_Datalist_Element">
+        <header>The Datalist Element</header>
+        <p>
+          The datalist element specifies a list of pre-defined options for an
+          input element. Users will see a drop-down list of the pre-defined
+          options as they input data. The list attribute of the input element,
+          must refer to the id attribute of the datalist element.
+        </p>
+        <p>Example:</p>
+        <code>&lt;form action="/action_page.php"&gt;</code>
+        <code>&lt;input list="browsers"&gt;</code>
+        <code>&lt;datalist id="browsers"&gt;</code>
+        <code>&lt;option value="Internet Explorer"&gt;</code>
+        <code>&lt;option value="Firefox"&gt;</code>
+        <code>&lt;option value="Chrome"&gt;</code>
+        <code>&lt;option value="Opera"&gt;</code>
+        <code>&lt;option value="Safari"&gt;</code>
+        <code>&lt;/datalist&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
